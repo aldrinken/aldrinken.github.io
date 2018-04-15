@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <style>
+
+    body {
+      margin: 1;
+      font-family: helvetica;
+      color: gray;
+    }
+
+    h1, h2{
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    p {
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    /* Navigation Bar */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        right: 0;
+        padding: 0;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        letter-spacing: 2px;
+        color: gray;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      font-weight: bold;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 100px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: gray;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      font-weight: bold;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .active {
+      font-weight: bold;
+      color: dimgray;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* LOGO */
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a style="letter-spacing: 6px; font-weight: bold; border-right: 2px solid #bbb;" href="index.html">CHRISTIAN DIOKNO PHOTOGRAPHY</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">PROJECTS</a>
+      <div class="dropdown-content">
+        <a href="annah.html">Annah</a>
+        <a href="janette.html">Janette</a>
+        <a href="iya.html">Iya</a>
+        <a href="more.html">more</a>
+      </div>
+    </li>
+    <li class="active" style="float:right"><a href="about.html">ABOUT</a></li>
+  </ul>
+
+  <h1>ABOUT</h1>
+  <img src="christian-diokno.jpg" style="display:block; width:75%; margin-left:auto; margin-right:auto">
+  <div>
+    <p> CHRISTIAN DIOKNO PHOTOGRAPHY offers stunning photo services and concepts with reasonable price. By Christian Lad Diokno.<br><br>
+      Based on Metro Manila, Philippines.
+    </p>
+    <center>
+    <a href="https://www.facebook.com/Christian-Diokno-Photography-940388816096971/"><img src="fb.png"></a>
+    <a href="https://www.instagram.com/christianportraits/"><img src="ig.png"></a>
+  </center>
+    <p>Contact info<br>
+      e-mail: ladz027@gmail.com<br>
+      phone: 0905 226 1589</p>
+  </div>
+  <a href="index.html"><img class="logo" src="logo.png"></a>
+
+</body>
+</html>

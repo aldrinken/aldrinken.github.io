@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 1;
+      font-family: helvetica;
+      color: gray;
+    }
+
+    h1, h2{
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    p {
+      letter-spacing: 1px;
+    }
+
+    /* Navigation Bar */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        right: 0;
+        padding: 0;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        letter-spacing: 3px;
+        color: gray;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+      font-weight: bold;
+    }
+
+    /* IMAGE LAYOUT*/
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 4px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* BLUR ANIMATION */
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .container:hover .image {
+      filter: blur(7px);
+    }
+
+    .text {
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: 34px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      letter-spacing: 3px;
+    }
+
+      /* LOGO */
+      .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        padding: 10px;
+      }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a style="letter-spacing: 6px; font-weight: bold" href="index.html">CHRISTIAN DIOKNO PHOTOGRAPHY</a></li>
+    <li style="float:right"><a href="about.html">ABOUT</a></li>
+  </ul>
+
+  <h1>PROJECTS</h1>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <a href= "annah.html"><img src="annah13.jpg" class="image" style="width:200%"></a>
+        <div class="overlay">
+          <a href="annah.html"><div class="text">ANNAH</div></a>
+        </div>
+      </div>
+
+      <div class="container">
+        <a href= "janette.html"><img src="janette.jpg" class="image" style="width:200%"></a>
+        <div class="overlay">
+          <a href="janette.html"><div class="text">JANETTE</div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="container">
+        <a href= "iya.html"><img src="iya2.jpg" class="image" style="width:200%"></a>
+        <div class="overlay">
+          <a href="iya.html"><div class="text">IYA</div></a>
+        </div>
+      </div>
+
+      <div class="container">
+        <a href= "more.html"><img src="more0.jpg" class="image" style="width:200%"></a>
+        <div class="overlay">
+          <a href="more.html"><div class="text">more...</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="index.html"><img class="logo" src="logo.png"></a>
+</body>
+</html>
